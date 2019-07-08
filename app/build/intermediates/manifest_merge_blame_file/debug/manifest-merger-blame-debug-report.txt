@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.fishhookfortelecommunication"
+3    package="com.example.i2iCell"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -31,13 +31,13 @@
 20-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:10:9-35
 21        android:theme="@style/AppTheme" >
 21-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:11:9-40
-22        <activity android:name="com.example.fishhookfortelecommunication.BalanceActivity" />
+22        <activity android:name="com.example.i2iCell.BalanceActivity" />
 22-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:12:9-62
 22-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:12:19-50
-23        <activity android:name="com.example.fishhookfortelecommunication.SignupActivity" />
+23        <activity android:name="com.example.i2iCell.SignupActivity" />
 23-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:13:9-52
 23-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:13:19-49
-24        <activity android:name="com.example.fishhookfortelecommunication.MainActivity" >
+24        <activity android:name="com.example.i2iCell.MainActivity" >
 24-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:14:9-21:20
 24-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:14:19-47
 25            <intent-filter>
@@ -56,7 +56,7 @@
 32-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\4f366d8a622a7bfecac866662088196a\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
 33            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
 33-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\4f366d8a622a7bfecac866662088196a\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
-34            android:authorities="com.example.fishhookfortelecommunication.lifecycle-process"
+34            android:authorities="com.example.i2iCell.lifecycle-process"
 34-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\4f366d8a622a7bfecac866662088196a\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
 35            android:exported="false"
 35-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\4f366d8a622a7bfecac866662088196a\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37

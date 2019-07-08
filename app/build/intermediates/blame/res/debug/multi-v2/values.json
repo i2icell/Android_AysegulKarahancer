@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\7307\\AndroidStudioProjects\\FishHookForTelecommunication\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\7307\\.gradle\\caches\\transforms-2\\files-2.1\\8bebfd56772390b0c7c5a30636a918a8\\coordinatorlayout-1.0.0\\res\\values\\values.xml",
@@ -80,20 +80,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\7307\\AndroidStudioProjects\\FishHookForTelecommunication\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\src\\main\\res\\values\\dimens.xml",
                     "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "157,57,105",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "198,99,151"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "90,149",
+                        "endColumns": "57,55",
+                        "endOffsets": "143,200"
                     },
                     "to": {
-                        "startLines": "192,193,194",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "9973,10019,10066",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "10014,10061,10112"
+                        "startLines": "333,334",
+                        "startColumns": "4,4",
+                        "startOffsets": "19440,19498",
+                        "endColumns": "57,55",
+                        "endOffsets": "19493,19549"
                     }
                 },
                 {
@@ -152,7 +152,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\7307\\AndroidStudioProjects\\FishHookForTelecommunication\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "5,6,1,9,8,10,3,4,2,7",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -169,7 +169,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\7307\\AndroidStudioProjects\\FishHookForTelecommunication\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -188,20 +188,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\7307\\AndroidStudioProjects\\FishHookForTelecommunication\\app\\src\\main\\res\\values\\dimens.xml",
+                    "source": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "90,149",
-                        "endColumns": "57,55",
-                        "endOffsets": "143,200"
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "157,57,105",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "198,99,151"
                     },
                     "to": {
-                        "startLines": "333,334",
-                        "startColumns": "4,4",
-                        "startOffsets": "19440,19498",
-                        "endColumns": "57,55",
-                        "endOffsets": "19493,19549"
+                        "startLines": "192,193,194",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "9973,10019,10066",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "10014,10061,10112"
                     }
                 },
                 {

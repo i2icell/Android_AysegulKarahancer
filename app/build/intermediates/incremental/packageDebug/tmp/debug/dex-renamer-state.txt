@@ -1,4 +1,4 @@
 #Fri Jul 05 16:51:56 EEST 2019
-base.0=C\:\\Users\\7307\\AndroidStudioProjects\\FishHookForTelecommunication\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+base.0=C\:\\Users\\7307\\AndroidStudioProjects\\i2iCell\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
