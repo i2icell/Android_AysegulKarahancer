@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +28,7 @@ String result;
     protected void onCreate(Bundle savedInstanceState) {
 
         final AlertDialog.Builder signupFailed = new AlertDialog.Builder(this);
-        signupFailed.setMessage("Kullanıcı Adı Veya Kullanıcı Şifresi Hatalı");
+        signupFailed.setMessage("Girdiğiniz Bilgiler Hatalı");
         signupFailed.setTitle("Giriş Hatalı");
         signupFailed.setPositiveButton("TAMAM", null);
         signupFailed.setCancelable(true);
@@ -50,55 +51,49 @@ String result;
         final EditText signupPass = (EditText)findViewById(R.id.signupPassword);
         final EditText inputEmail = (EditText)findViewById(R.id.inputEmail);
 
-
-
-
         successSign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                StrictMode.ThreadPolicy policy2 = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+                StrictMode.setThreadPolicy(policy2);
 
                 try {
-                    String myURL ="http://68.183.75.84:8080/i2iCellService/services/Services/" +
-                            "createAccount?inputFirstName="+firstName.getText()+"&inputLastName="+lastName.getText()
-                            +"&inputPhoneNumber="+phoneNum.getText()
-                            +"&inputEmail="+inputEmail.getText()
-                            +"&inputPassword="+signupPass.getText()
-                            +"&inputBirthDate="+birthDate.getDate()
-                            +"&inputTcNumber="+tcNo.getText();
-                    //http://68.183.75.84:8080/i2iCellService/services/Services/createAccount?inputFirstName=aysegull&inputLastName=karahancer&inputPhoneNumber=5418422284&inputEmail=aysegul@mail.com&inputPassword=192837&inputBirthDate=25-09-2005&inputTcNumber=57076105382
+                    String myURL = "http://68.183.75.84:8080/i2iCellService/services/Services/" +
+                            "createAccount?inputFirstName=" + firstName.getText() + "&inputLastName=" + lastName.getText()
+                            + "&inputPhoneNumber=" + phoneNum.getText()
+                            + "&inputEmail=" + inputEmail.getText()
+                            + "&inputPassword=" + signupPass.getText()
+                            + "&inputBirthDate=" + birthDate.getDate()
+                            + "&inputTcNumber=" + tcNo.getText();
+                    //http://68.183.75.84:8080/i2iCellService/services/Services/createAccount?inputFirstName=aysegull&inputLastName=karahancer&inputPhoneNumber=5418422284&inputEmail=aysegul@mail.com&inputPassword=Aysek837&inputBirthDate=25-09-2005&inputTcNumber=57076105382
 
                     URL url = new URL(myURL);
-                    HttpURLConnection conn=(HttpURLConnection) url.openConnection();
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.setConnectTimeout(60000);
                     BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
                     String str;
                     while ((str = in.readLine()) != null) {
-                        Log.i("getXMLTag",str);
-                        //urls.add(str);
-
+                        Log.i("getXMLTag", str);
                         response += str;
                     }
-                    result= ""+response.charAt(75);
+                    result = "" + response.charAt(71);
                     String myRes = result;
-                    Log.i("resultFromXMLTag",result);
-
+                    Log.i("resultFromXMLTag", result);
                     in.close();
                 } catch (Exception e) {
-                    Log.d("MyTag",e.toString());
+                    Log.d("MyTag", e.toString());
                 }
-                TextView tv = (TextView)findViewById(R.id.textView11);
-                char first = response.charAt(75);
 
-                char q = '1';
-                tv.setText(String.valueOf(q));
-                if (q==first){ Toast.makeText(getApplicationContext(), "Giriş Başarılı", Toast.LENGTH_SHORT).show();
+                if (response.charAt(71)=='1'){ Toast.makeText(getApplicationContext(), "Kayıt Başarılı", Toast.LENGTH_SHORT).show();
                     startActivity(login);
                     return;}
-                else { Toast.makeText(getApplicationContext(), "Giriş Hatalı", Toast.LENGTH_SHORT).show();
+                else { Toast.makeText(getApplicationContext(), "Kayıt Hatalı"+response.charAt(71), Toast.LENGTH_SHORT).show();
                     signupFailed.create().show();
-                    return;
+                    return;}
+
+
                 }
-            }
+
         });
     }
 }

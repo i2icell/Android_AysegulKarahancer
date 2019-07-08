@@ -72,30 +72,24 @@ public class MainActivity extends AppCompatActivity {
                     BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
                     String str;
                     while ((str = in.readLine()) != null) {
-                        Log.i("getXMLTag",str);
-                        //urls.add(str);
+                        Log.i("",str);
                         response += str;
                     }
-                    result= ""+response.charAt(75);
-                    myRes = result;
+                    result= ""+response.charAt(62);
                     Log.i("resultFromXMLTag",result);
-
                     in.close();
                 } catch (Exception e) {
                     Log.d("MyTag",e.toString());
                 }
-             TextView tv = (TextView)findViewById(R.id.textView11);
-                char first = response.charAt(75);
-
-                char q = '1';
-                tv.setText(String.valueOf(q));
-               if (q==first){ Toast.makeText(getApplicationContext(), "Giriş Başarılı", Toast.LENGTH_SHORT).show();
+               if(response.charAt(63)=='1'){ Toast.makeText(getApplicationContext(),"Giriş Başarılı", Toast.LENGTH_SHORT).show();
                 startActivity(toBalanceActivityIntent);
-                return;}
-                else { Toast.makeText(getApplicationContext(), "Giriş Hatalı", Toast.LENGTH_SHORT).show();
+                return;
+               }
+                else{ Toast.makeText(getApplicationContext(), "Giriş Hatalı", Toast.LENGTH_SHORT).show();
                    loginFailed.create().show();
                    return;
                 }
+
             }
 
 
