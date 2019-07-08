@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
     int digitCount;
     String result;
     String myRes;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,14 +76,11 @@ public class MainActivity extends AppCompatActivity {
                         //urls.add(str);
                         response += str;
                     }
-
                     result= ""+response.charAt(75);
                     myRes = result;
                     Log.i("resultTag",result);
 
                     in.close();
-
-
                 } catch (Exception e) {
                     Log.d("MyTag",e.toString());
                 }
@@ -94,51 +90,13 @@ public class MainActivity extends AppCompatActivity {
                 char q = '1';
                 tv.setText(String.valueOf(q));
                if (q==first){ Toast.makeText(getApplicationContext(), "Giriş Başarılı", Toast.LENGTH_SHORT).show();
-                   startActivity(kk);
-                   return;}
-                else { Toast.makeText(getApplicationContext(), "Giriş Hatalı!", Toast.LENGTH_SHORT).show();
+                startActivity(kk);
+                return;}
+                else { Toast.makeText(getApplicationContext(), "Giriş Hatalı", Toast.LENGTH_SHORT).show();
                    loginFailed.create().show();
                    return;
                 }
             }
-   /* private boolean isPhoneValid(String phoneNumber) {
-        if (String.valueOf(phoneNumber).startsWith("5")&& String.valueOf(phoneNumber).length()==10 ){
-            return true;
-        }
-        else return false;
-    }
-    private boolean isPasswordValid(String loginPassword){
-                if ((String.valueOf(loginPassword).length()>=8)&&(String.valueOf(loginPassword).length()<=12)){
-                    return true;}
-                else return false;
-    }
-    private boolean passwordOtherValid(String loginPassword){
-                int passLength = (String.valueOf(loginPassword).length());
-                int [] passChar = new int[passLength];
-
-                for (int a = 0; a < passLength; a++){
-
-                    if(loginPassword.charAt(a) == Character.toUpperCase( loginPassword.charAt(a))){
-                        upperCount+=1;
-                    }
-
-                    if(loginPassword.charAt(a)==Character.toLowerCase( loginPassword.charAt(a))) {
-                        lowerCount += 1;
-                    }
-                    if(Character.isDigit( loginPassword.charAt(a))){
-                        digitCount+=1;
-                    }
-
-                }
-                if ((upperCount>0)&&(lowerCount>0)&&(digitCount>0)){
-                    return true;
-                }
-
-                else return false;
-    }
-*/
-
-
 
 
 });}

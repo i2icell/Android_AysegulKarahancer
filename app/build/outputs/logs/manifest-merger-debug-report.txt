@@ -42,7 +42,7 @@ INJECTED from C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\
 INJECTED from C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:2:1-24:12
 INJECTED from C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:2:1-24:12
 	package
-		ADDED from C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:3:5-55
+		ADDED from C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml
 	android:versionName
