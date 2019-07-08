@@ -93,10 +93,10 @@ public class MainActivity extends AppCompatActivity {
 
                 char q = '1';
                 tv.setText(String.valueOf(q));
-               if (q==first){ Toast.makeText(getApplicationContext(), "Giriş Başarılı!", Toast.LENGTH_SHORT).show();
+               if (q==first){ Toast.makeText(getApplicationContext(), "Giriş Başarılı", Toast.LENGTH_SHORT).show();
                    startActivity(kk);
                    return;}
-                else { Toast.makeText(getApplicationContext(), "Giriş BAŞARISIZ!", Toast.LENGTH_SHORT).show();
+                else { Toast.makeText(getApplicationContext(), "Giriş Hatalı!", Toast.LENGTH_SHORT).show();
                    loginFailed.create().show();
                    return;
                 }

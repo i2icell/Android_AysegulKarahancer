@@ -49,11 +49,7 @@ public class BalanceActivity extends AppCompatActivity {
                             while ((str = in.readLine()) != null) {
                                 Log.i("MyTag",str);
                                 urls.add(str);
-                                List<String> head = urls.subList(0, 77);
-
                                 String result=urls.get(78);
-                                List<String> tail = urls.subList(79,124);
-
                                 here.setText(str);
                             }
                             in.close();
