@@ -30,15 +30,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btn = (Button)findViewById(R.id.btnDoMagic);
-        Button newSign =(Button)findViewById(R.id.newSignUp);
-        final EditText et = (EditText)findViewById(R.id.phoneNumber);
-        final EditText ps = (EditText)findViewById(R.id.loginPassword);
-        final Intent i = new Intent(getBaseContext(),SignupActivity.class);
-        final Intent kk = new Intent(getBaseContext(),BalanceActivity.class);
+        Button enterButton = (Button)findViewById(R.id.btnEnter);
+        Button newSignButton =(Button)findViewById(R.id.newSignUp);
+        final EditText phoneNumber = (EditText)findViewById(R.id.phoneNumber);
+        final EditText loginPassword = (EditText)findViewById(R.id.loginPassword);
+        final Intent toSignUpIntent = new Intent(getBaseContext(),SignupActivity.class);
+        final Intent toBalanceActivityIntent = new Intent(getBaseContext(),BalanceActivity.class);
         final AlertDialog.Builder loginFailed = new AlertDialog.Builder(this);
-        loginFailed.setMessage("Kullanıcı adı veya kullanıcı şifresi hatalı");
-        loginFailed.setTitle("Giriş Başarısız");
+        loginFailed.setMessage("Kullanıcı Adı Veya Kullanıcı Şifresi Hatalı");
+        loginFailed.setTitle("Giriş Hatalı");
         loginFailed.setPositiveButton("TAMAM", null);
         loginFailed.setCancelable(true);
         loginFailed.setPositiveButton("TAMAM",
@@ -47,13 +47,13 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                     }
                 });
-        newSign.setOnClickListener(new View.OnClickListener() {
+        newSignButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(i);
+                startActivity(toSignUpIntent);
             }
         });
-        btn.setOnClickListener(new View.OnClickListener() {
+        enterButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
@@ -65,20 +65,20 @@ public class MainActivity extends AppCompatActivity {
                 String response = "";
                 try {
                     String myURL ="http://68.183.75.84:8080/i2iCellService/services/Services/" +
-                            "login?inputPhoneNumber="+et.getText()+"&inputPassword="+ps.getText();
+                            "login?inputPhoneNumber="+phoneNumber.getText()+"&inputPassword="+loginPassword.getText();
                     URL url = new URL(myURL);
                     HttpURLConnection conn=(HttpURLConnection) url.openConnection();
                     conn.setConnectTimeout(60000);
                     BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
                     String str;
                     while ((str = in.readLine()) != null) {
-                        Log.i("MyTag",str);
+                        Log.i("getXMLTag",str);
                         //urls.add(str);
                         response += str;
                     }
                     result= ""+response.charAt(75);
                     myRes = result;
-                    Log.i("resultTag",result);
+                    Log.i("resultFromXMLTag",result);
 
                     in.close();
                 } catch (Exception e) {
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 char q = '1';
                 tv.setText(String.valueOf(q));
                if (q==first){ Toast.makeText(getApplicationContext(), "Giriş Başarılı", Toast.LENGTH_SHORT).show();
-                startActivity(kk);
+                startActivity(toBalanceActivityIntent);
                 return;}
                 else { Toast.makeText(getApplicationContext(), "Giriş Hatalı", Toast.LENGTH_SHORT).show();
                    loginFailed.create().show();

@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.975" />
 
     <Button
-        android:id="@+id/btnDoMagic"
+        android:id="@+id/btnEnter"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="101dp"
         android:layout_height="47dp"
@@ -172,7 +172,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDoMagic"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnter"
         app:layout_constraintVertical_bias="0.153" />
 
     <Button
