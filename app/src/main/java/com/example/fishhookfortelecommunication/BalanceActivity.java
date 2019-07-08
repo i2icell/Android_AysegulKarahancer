@@ -31,17 +31,12 @@ public class BalanceActivity extends AppCompatActivity {
                 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
                 StrictMode.setThreadPolicy(policy);
 
-                        final ArrayList<String> urls=new ArrayList<String>(); //to read each line
-                        //TextView t; //to show the result, please declare and find it inside onCreate()
+                        final ArrayList<String> urls=new ArrayList<String>();
                         final TextView t;
-
-
                         try {
-                            // Create a URL for the desired page
-                            String myURL ="http://68.183.75.84:8080/Calculator/services/DBConnection/" +
-                                    "callLoginProcedure?inputPhoneNumber=PNUMBER&inputPassword=PPASSWORD";
-                            URL url = new URL(myURL); //My text file location
-                            //First open the connection
+                            String myURL ="http://68.183.75.84:8080/i2iCellService/services/Services/" +
+                                    "login?inputPhoneNumber=PNUMBER&inputPassword=PPASSWORD";
+                            URL url = new URL(myURL);
 
                             myURL = myURL.replace("PNUMBER", "5511919680");
                             myURL = myURL.replace("PPASSWORD", "aysegul123");
@@ -50,8 +45,6 @@ public class BalanceActivity extends AppCompatActivity {
                             conn.setConnectTimeout(60000); // timing out in a minute
 
                             BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-
-                            //t=(TextView)findViewById(R.id.TextView1); // ideally do this in onCreate()
                             String str;
                             while ((str = in.readLine()) != null) {
                                 Log.i("MyTag",str);
@@ -62,14 +55,13 @@ public class BalanceActivity extends AppCompatActivity {
                                 List<String> tail = urls.subList(79,124);
 
                                 here.setText(str);
-
                             }
                             in.close();
 
                         } catch (Exception e) {
                             Log.d("MyTag",e.toString());
                         }
-                        //since we are in background thread, to post results we have to go back to ui thread. do the following for that
+
             }
         });
     }

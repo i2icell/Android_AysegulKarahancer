@@ -29,12 +29,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
-
-        // //
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btn = (Button)findViewById(R.id.btnDoMagic);
@@ -67,35 +61,21 @@ public class MainActivity extends AppCompatActivity {
                 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
                 StrictMode.setThreadPolicy(policy);
 
-                final ArrayList<String> urls=new ArrayList<String>(); //to read each line
-                //TextView t; //to show the result, please declare and find it inside onCreate()
+                final ArrayList<String> urls=new ArrayList<String>();
                 final TextView t;
-
                 String response = "";
-
-
                 try {
-                    // Create a URL for the desired page
-                    String myURL ="http://68.183.75.84:8080/Calculator/services/DBConnection/" +
-                            "callLoginProcedure?inputPhoneNumber="+et.getText()+"&inputPassword="+ps.getText();
-
-
-                    //myURL = myURL.replace("PNUMBER", et.getText());
-                    //myURL = myURL.replace("PPASSWORD", ps.getText());
-
+                    String myURL ="http://68.183.75.84:8080/i2iCellService/services/Services/" +
+                            "login?inputPhoneNumber="+et.getText()+"&inputPassword="+ps.getText();
                     URL url = new URL(myURL);
                     HttpURLConnection conn=(HttpURLConnection) url.openConnection();
-                    conn.setConnectTimeout(60000); // timing out in a minute
-
+                    conn.setConnectTimeout(60000);
                     BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-
-                    //t=(TextView)findViewById(R.id.TextView1); // ideally do this in onCreate()
                     String str;
                     while ((str = in.readLine()) != null) {
                         Log.i("MyTag",str);
                         //urls.add(str);
                         response += str;
-
                     }
 
                     result= ""+response.charAt(75);
@@ -120,58 +100,6 @@ public class MainActivity extends AppCompatActivity {
                    loginFailed.create().show();
                    return;
                 }
-
-                /*if (response.charAt(75)==1) {
-                    Toast.makeText(getApplicationContext(), "Giriş Başarılı!", Toast.LENGTH_SHORT).show();
-
-                }
-                else {
-
-                }
-                /*StringBuilder content = new StringBuilder();
-
-                // many of these calls can throw exceptions, so i've just
-                // wrapped them all in one try/catch statement.
-                try
-                {
-                    String theUrl = "http://68.183.75.84:8080/Calculator/services/DBConnection/" +
-                            "callLoginProcedure?inputPhoneNumber=PNUMBER&inputPassword=PPASSWORD";
-
-                    theUrl = theUrl.replace("PNUMBER", "5511919680");
-                    theUrl = theUrl.replace("PPASSWORD", "aysegul123");
-                    // create a url object
-                    URL url = new URL(theUrl);
-
-                    // create a urlconnection object
-                    URLConnection urlConnection = url.openConnection();
-
-                    // wrap the urlconnection in a bufferedreader
-                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-
-                String line;
-
-                // read from the urlconnection via the bufferedreader
-                while ((line = bufferedReader.readLine()) != null)
-                {
-                    content.append(line + "\n");
-                }
-                bufferedReader.close();
-            }
-                catch(Exception e)
-            {
-                e.printStackTrace();
-                Log.i("HATA", "onClick: HATAAAAAAAA " + content.toString());
-
-            }
-
-                Log.i("DENEME", "onClick: " + content.toString());
-                Toast.makeText(getApplicationContext(),content.toString() + "heyo" , Toast.LENGTH_LONG).show();*/
-
-
-                //
-
-
-
             }
    /* private boolean isPhoneValid(String phoneNumber) {
         if (String.valueOf(phoneNumber).startsWith("5")&& String.valueOf(phoneNumber).length()==10 ){

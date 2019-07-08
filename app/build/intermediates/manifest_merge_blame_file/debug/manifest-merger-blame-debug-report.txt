@@ -6,63 +6,62 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-8-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml
+8-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml
+9-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:23:5-83
-11-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:23:22-64
+11-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:23:5-83
+11-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:23:22-64
 12
 13    <application
-13-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:5:5-22:19
+13-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:5:5-22:19
 14        android:allowBackup="true"
-14-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:6:9-35
+14-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:6:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 15-->[androidx.core:core:1.0.1] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\c9abde3d00d5c35e349279d839666d3e\core-1.0.1\AndroidManifest.xml:22:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/ic_launcher"
-17-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:7:9-43
+17-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:7:9-43
 18        android:label="@string/app_name"
-18-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:8:9-41
+18-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:8:9-41
 19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:9:9-54
+19-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:9:9-54
 20        android:supportsRtl="true"
-20-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:10:9-35
-21        android:testOnly="true"
-22        android:theme="@style/AppTheme" >
-22-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:11:9-40
-23        <activity android:name="com.example.fishhookfortelecommunication.BalanceActivity" />
-23-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:12:9-62
-23-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:12:19-50
-24        <activity android:name="com.example.fishhookfortelecommunication.SignupActivity" />
-24-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:13:9-52
-24-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:13:19-49
-25        <activity android:name="com.example.fishhookfortelecommunication.MainActivity" >
-25-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:14:9-21:20
-25-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:14:19-47
-26            <intent-filter>
-26-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:15:13-20:29
-27                <action android:name="android.intent.action.MAIN" />
-27-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:16:17-69
-27-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:16:25-66
-28
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:18:17-77
-29-->C:\Users\7307\AndroidStudioProjects\FishHookForTelecommunication\app\src\main\AndroidManifest.xml:18:27-74
-30            </intent-filter>
-31        </activity>
-32
-33        <provider
-33-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\4f366d8a622a7bfecac866662088196a\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
-34            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-34-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\4f366d8a622a7bfecac866662088196a\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
-35            android:authorities="com.example.fishhookfortelecommunication.lifecycle-process"
-35-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\4f366d8a622a7bfecac866662088196a\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
-36            android:exported="false"
-36-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\4f366d8a622a7bfecac866662088196a\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
-37            android:multiprocess="true" />
-37-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\4f366d8a622a7bfecac866662088196a\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
-38    </application>
-39
-40</manifest>
+20-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:10:9-35
+21        android:theme="@style/AppTheme" >
+21-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:11:9-40
+22        <activity android:name="com.example.fishhookfortelecommunication.BalanceActivity" />
+22-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:12:9-62
+22-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:12:19-50
+23        <activity android:name="com.example.fishhookfortelecommunication.SignupActivity" />
+23-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:13:9-52
+23-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:13:19-49
+24        <activity android:name="com.example.fishhookfortelecommunication.MainActivity" >
+24-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:14:9-21:20
+24-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:14:19-47
+25            <intent-filter>
+25-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:15:13-20:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:16:17-69
+26-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:16:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:18:17-77
+28-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:18:27-74
+29            </intent-filter>
+30        </activity>
+31
+32        <provider
+32-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\4f366d8a622a7bfecac866662088196a\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+33            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+33-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\4f366d8a622a7bfecac866662088196a\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+34            android:authorities="com.example.fishhookfortelecommunication.lifecycle-process"
+34-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\4f366d8a622a7bfecac866662088196a\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+35            android:exported="false"
+35-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\4f366d8a622a7bfecac866662088196a\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+36            android:multiprocess="true" />
+36-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\caches\transforms-2\files-2.1\4f366d8a622a7bfecac866662088196a\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+37    </application>
+38
+39</manifest>
