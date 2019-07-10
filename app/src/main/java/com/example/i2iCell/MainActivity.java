@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         final EditText phoneNumber = (EditText)findViewById(R.id.phoneNumber);
         final EditText loginPassword = (EditText)findViewById(R.id.loginPassword);
         final Intent toSignUpIntent = new Intent(getBaseContext(),SignupActivity.class);
-        final Intent toBalanceActivityIntent = new Intent(getBaseContext(),BalanceActivity.class);
+        final Intent toBalanceActivityIntent = new Intent(getBaseContext(),denemeActivity.class);
         final AlertDialog.Builder loginFailed = new AlertDialog.Builder(this);
         loginFailed.setMessage("Kullanıcı Adı Veya Kullanıcı Şifresi Hatalı");
         loginFailed.setTitle("Giriş Hatalı");
