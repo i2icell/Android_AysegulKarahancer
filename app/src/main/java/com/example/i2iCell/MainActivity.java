@@ -39,9 +39,7 @@ public class MainActivity extends AppCompatActivity {
         final Intent toSignUpIntent = new Intent(getBaseContext(),SignupActivity.class);
 
         final Intent toBalanceActivityIntent = new Intent(getBaseContext(),BalanceActivity.class);
-        Bundle bundle = new Bundle();
-        bundle.putString("datam", String.valueOf(phoneNumber));
-        toBalanceActivityIntent.putExtras(bundle);
+
 
         //final Intent toBalanceActivityIntent = new Intent(getBaseContext(),BalanceActivity.class);
         final AlertDialog.Builder loginFailed = new AlertDialog.Builder(this);
@@ -92,24 +90,11 @@ public class MainActivity extends AppCompatActivity {
                if(response.charAt(63)=='1'){ Toast.makeText(getApplicationContext(),"Giriş Başarılı", Toast.LENGTH_SHORT).show();
                 String getPhone;
                getPhone = (String.valueOf(phoneNumber.getText()));
+                   Bundle bundle = new Bundle();
+                   bundle.putString("datam", String.valueOf(phoneNumber.getText()));
+                   toBalanceActivityIntent.putExtras(bundle);
+                   startActivity(toBalanceActivityIntent);
 
-
-
-
-
-               startActivity(toBalanceActivityIntent);
-
-
-
-                   Log.i("debene", "onCreate: " + getPhone);
-
-
-                   //i.putExtra("thisisphone",getPhone);
-                   //toBalanceActivityIntent.putExtra("send_phone",getPhone);
-
-
-
-                //toBalanceActivityIntent.putExtra("phoneNumber",getPhone);
                    return;
                }
                 else{ Toast.makeText(getApplicationContext(), "Giriş Hatalı", Toast.LENGTH_SHORT).show();
