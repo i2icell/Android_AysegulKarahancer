@@ -1,11 +1,10 @@
 package com.example.i2iCell;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.os.StrictMode;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,16 +13,61 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
+
+import static com.example.i2iCell.R.id.phoneNum;
 
 public class BalanceActivity extends AppCompatActivity {
 
-   @Override
-    protected void onCreate(Bundle savedInstanceState) {
+
+            protected void onCreate(Bundle savedInstanceState) {
+
+                super.onCreate(savedInstanceState);
+
+                setContentView(R.layout.activity_balance);
 
 
-        setContentView(R.layout.activity_balance);
 
-        super.onCreate(savedInstanceState);
-   }
-}
+                //http://68.183.75.84:8080/i2iCellService/services/Services/getBalancesResponse?inputPhoneNumber=5327981750
+
+                TextView gb = (TextView) findViewById(R.id.GB);
+                TextView dk = (TextView) findViewById(R.id.DK);
+                TextView sms = (TextView) findViewById(R.id.SMS);
+                Bundle bundle =getIntent().getExtras();
+                String data = bundle.getString("datam");
+                final ArrayList<String> urls = new ArrayList<String>();
+                final TextView t;
+                String response = "";
+                Log.i("nedir",data);
+
+                try {
+
+                    String myURL = "http://68.183.75.84:8080/i2iCellService/services/Services/getBalancesResponse?inputPhoneNumber="
+                            + data;
+
+                    URL url = new URL(myURL);
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                    conn.setConnectTimeout(60000);
+                    BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                    String str;
+                    while ((str = in.readLine()) != null) {
+                        Log.i("", str);
+                        response += str;
+                    }
+
+                    String[] xmls = response.split("<ns:return>");
+                    String withoutReturnXML = xmls[1] + xmls[2] + xmls[3];
+                    String[] lastXMLS = withoutReturnXML.split("</ns:return>");
+                    String LasResponse = lastXMLS[0] + " " + lastXMLS[1] + " " + lastXMLS[2];
+                    Toast.makeText(getApplicationContext(), LasResponse, Toast.LENGTH_SHORT).show();
+                    String result = "" + response.charAt(62);
+                    gb.setText(lastXMLS[0]);
+                    dk.setText(lastXMLS[1]);
+                    sms.setText(lastXMLS[2]);
+
+                    in.close();
+                } catch (Exception e) {
+                    Log.d("MyTag", e.toString());
+                }
+
+            }
+        }

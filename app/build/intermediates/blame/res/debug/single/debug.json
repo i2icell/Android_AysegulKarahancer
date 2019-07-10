@@ -144,6 +144,10 @@
         "source": "C:\\Users\\7307\\.gradle\\caches\\transforms-2\\files-2.1\\c9abde3d00d5c35e349279d839666d3e\\core-1.0.1\\res\\layout-v16\\notification_template_custom_big.xml"
     },
     {
+        "merged": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_deneme.xml.flat",
+        "source": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\src\\main\\res\\layout\\activity_deneme.xml"
+    },
+    {
         "merged": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_header.xml.flat",
         "source": "C:\\Users\\7307\\.gradle\\caches\\transforms-2\\files-2.1\\16e34cc941ca560f1ce786850088f542\\material-1.0.0\\res\\layout\\design_navigation_item_header.xml"
     },

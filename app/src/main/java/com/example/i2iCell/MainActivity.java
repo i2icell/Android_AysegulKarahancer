@@ -2,6 +2,7 @@ package com.example.i2iCell;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
@@ -16,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.io.Serializable;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
@@ -35,7 +37,13 @@ public class MainActivity extends AppCompatActivity {
         final EditText phoneNumber = (EditText)findViewById(R.id.phoneNumber);
         final EditText loginPassword = (EditText)findViewById(R.id.loginPassword);
         final Intent toSignUpIntent = new Intent(getBaseContext(),SignupActivity.class);
-        final Intent toBalanceActivityIntent = new Intent(getBaseContext(),denemeActivity.class);
+
+        final Intent toBalanceActivityIntent = new Intent(getBaseContext(),BalanceActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putString("datam", String.valueOf(phoneNumber));
+        toBalanceActivityIntent.putExtras(bundle);
+
+        //final Intent toBalanceActivityIntent = new Intent(getBaseContext(),BalanceActivity.class);
         final AlertDialog.Builder loginFailed = new AlertDialog.Builder(this);
         loginFailed.setMessage("Kullanıcı Adı Veya Kullanıcı Şifresi Hatalı");
         loginFailed.setTitle("Giriş Hatalı");
@@ -82,8 +90,27 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("MyTag",e.toString());
                 }
                if(response.charAt(63)=='1'){ Toast.makeText(getApplicationContext(),"Giriş Başarılı", Toast.LENGTH_SHORT).show();
-                startActivity(toBalanceActivityIntent);
-                return;
+                String getPhone;
+               getPhone = (String.valueOf(phoneNumber.getText()));
+
+
+
+
+
+               startActivity(toBalanceActivityIntent);
+
+
+
+                   Log.i("debene", "onCreate: " + getPhone);
+
+
+                   //i.putExtra("thisisphone",getPhone);
+                   //toBalanceActivityIntent.putExtra("send_phone",getPhone);
+
+
+
+                //toBalanceActivityIntent.putExtra("phoneNumber",getPhone);
+                   return;
                }
                 else{ Toast.makeText(getApplicationContext(), "Giriş Hatalı", Toast.LENGTH_SHORT).show();
                    loginFailed.create().show();
@@ -94,8 +121,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 });}
-
-
 
 
 }
