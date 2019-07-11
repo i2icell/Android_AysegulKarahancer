@@ -8,8 +8,8 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
-        android:layout_width="429dp"
-        android:layout_height="69dp"
+        android:layout_width="507dp"
+        android:layout_height="74dp"
         android:layout_marginTop="40dp"
         android:background="#959999"
         android:theme="?attr/actionBarTheme"
@@ -20,12 +20,12 @@
         android:id="@+id/textView14"
         android:layout_width="122dp"
         android:layout_height="57dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:text="i2i Cell"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="36sp"
         app:layout_constraintEnd_toStartOf="@+id/imageView12"
-        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintHorizontal_bias="0.657"
         app:layout_constraintStart_toStartOf="@+id/toolbar2"
         app:layout_constraintTop_toTopOf="@+id/toolbar2" />
 
@@ -51,127 +51,295 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/menu" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
-        android:layout_width="223dp"
-        android:layout_height="210dp"
+        android:layout_width="260dp"
+        android:layout_height="254dp"
         android:layout_gravity="center"
         android:fillViewport="true"
         android:scrollbars="horizontal|vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
-        app:layout_constraintVertical_bias="0.504"
+        app:layout_constraintVertical_bias="0.529"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/gigabyte"
+                    android:layout_width="110dp"
+                    android:layout_height="47dp"
+                    android:layout_alignTop="@+id/imageView18"
+                    android:layout_alignEnd="@+id/imageView18"
+                    android:layout_alignRight="@+id/imageView18"
+                    android:layout_alignBottom="@+id/imageView18"
+                    android:layout_marginStart="58dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginTop="76dp"
+                    android:layout_marginEnd="74dp"
+                    android:layout_marginRight="74dp"
+                    android:layout_marginBottom="150dp"
+                    android:text="TextView"
+                    android:textSize="24sp"
+                    tools:layout_conversion_absoluteHeight="32dp"
+                    tools:layout_conversion_absoluteWidth="99dp" />
 
-            <ImageView
-                android:id="@+id/imageView18"
-                android:layout_width="214dp"
-                android:layout_height="157dp"
-                app:srcCompat="@drawable/circle" />
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="252dp"
+                    android:layout_height="265dp"
+                    app:srcCompat="@drawable/circle" />
+
+                <TextView
+                    android:id="@+id/abc"
+                    android:layout_width="123dp"
+                    android:layout_height="46dp"
+                    android:layout_alignTop="@+id/imageView18"
+                    android:layout_alignEnd="@+id/imageView18"
+                    android:layout_alignRight="@+id/imageView18"
+                    android:layout_alignBottom="@+id/imageView18"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="69dp"
+                    android:layout_marginLeft="69dp"
+                    android:layout_marginTop="138dp"
+                    android:layout_marginEnd="77dp"
+                    android:layout_marginRight="77dp"
+                    android:layout_marginBottom="70dp"
+                    android:text="GB"
+                    android:textSize="36sp"
+                    tools:layout_conversion_absoluteHeight="48dp"
+                    tools:layout_conversion_absoluteWidth="47dp" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="108dp"
+                    android:layout_height="75dp"
+                    android:layout_alignStart="@+id/imageView18"
+                    android:layout_alignLeft="@+id/imageView18"
+                    android:layout_alignTop="@+id/imageView18"
+                    android:layout_alignEnd="@+id/imageView18"
+                    android:layout_alignRight="@+id/imageView18"
+                    android:layout_alignBottom="@+id/imageView18"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="144dp"
+                    android:layout_marginRight="144dp"
+                    android:layout_marginBottom="179dp"
+                    app:srcCompat="@drawable/gb" />
+
+                <ImageView
+                    android:id="@+id/imageView27"
+                    android:layout_width="1299dp"
+                    android:layout_height="525dp"
+                    app:srcCompat="@drawable/blue" />
 
 
-            <ImageView
-                android:id="@+id/imageView20"
-                android:layout_width="122dp"
-                android:layout_height="95dp"
-                app:srcCompat="@drawable/circle" />
+            </RelativeLayout>
 
-            <TextView
-                android:id="@+id/abc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="GB"
-                android:textSize="36sp"
-                tools:layout_conversion_absoluteHeight="48dp"
-                tools:layout_conversion_absoluteWidth="47dp" />
-
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="DK"
-                tools:layout_conversion_absoluteHeight="19dp"
-                tools:layout_conversion_absoluteWidth="18dp"
-                tools:layout_editor_absoluteX="10dp"
-                tools:layout_editor_absoluteY="457dp" />
-
-            <TextView
-                android:id="@+id/DK"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textSize="36sp"
-                tools:layout_conversion_absoluteHeight="48dp"
-                tools:layout_conversion_absoluteWidth="148dp"
-                tools:layout_editor_absoluteX="10dp"
-                tools:layout_editor_absoluteY="476dp" />
-
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SMS"
-                tools:layout_conversion_absoluteHeight="19dp"
-                tools:layout_conversion_absoluteWidth="29dp"
-                tools:layout_editor_absoluteX="10dp"
-                tools:layout_editor_absoluteY="524dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
 
-            <TextView
-                android:id="@+id/SMS"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                tools:layout_conversion_absoluteHeight="19dp"
-                tools:layout_conversion_absoluteWidth="57dp"
-                tools:layout_editor_absoluteX="10dp"
-                tools:layout_editor_absoluteY="543dp" />
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="82dp"
+                    android:layout_height="58dp"
+                    android:layout_alignStart="@+id/imageView20"
+                    android:layout_alignLeft="@+id/imageView20"
+                    android:layout_alignTop="@+id/imageView20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="167dp"
+                    android:layout_marginLeft="167dp"
+                    android:layout_marginTop="155dp"
+                    android:layout_marginEnd="319dp"
+                    android:layout_marginRight="319dp"
+                    android:layout_marginBottom="41dp"
+                    android:text="DK"
+                    android:textSize="36sp"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="18dp"
+                    tools:layout_editor_absoluteX="10dp"
+                    tools:layout_editor_absoluteY="457dp" />
 
-            <ImageView
-                android:id="@+id/imageView19"
-                android:layout_width="214dp"
-                android:layout_height="157dp"
-                app:layout_constraintHorizontal_bias="0.153"
-                app:layout_constraintVertical_bias="1.0"
-                app:srcCompat="@drawable/circle" />
+                <TextView
+                    android:id="@+id/DK"
+                    android:layout_width="191dp"
+                    android:layout_height="40dp"
+                    android:layout_alignStart="@+id/imageView20"
+                    android:layout_alignLeft="@+id/imageView20"
+                    android:layout_alignEnd="@+id/imageView20"
+                    android:layout_alignRight="@+id/imageView20"
+                    android:layout_alignBottom="@+id/imageView20"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="133dp"
+                    android:layout_marginLeft="133dp"
+                    android:layout_marginTop="74dp"
+                    android:layout_marginEnd="127dp"
+                    android:layout_marginRight="127dp"
+                    android:layout_marginBottom="135dp"
+                    android:text="TextView"
+                    android:textSize="36sp"
+                    tools:layout_conversion_absoluteHeight="48dp"
+                    tools:layout_conversion_absoluteWidth="148dp"
+                    tools:layout_editor_absoluteX="10dp"
+                    tools:layout_editor_absoluteY="476dp" />
 
-            <TextView
-                android:id="@+id/GB"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textSize="24sp"
-                tools:layout_conversion_absoluteHeight="32dp"
-                tools:layout_conversion_absoluteWidth="99dp" />
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="417dp"
+                    android:layout_height="249dp"
+                    app:srcCompat="@drawable/circle" />
 
-            <ImageView
-                android:id="@+id/imageView21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/gb" />
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="99dp"
+                    android:layout_height="88dp"
+                    android:layout_alignStart="@+id/DK"
+                    android:layout_alignLeft="@+id/DK"
+                    android:layout_alignTop="@+id/imageView20"
+                    android:layout_alignEnd="@+id/DK"
+                    android:layout_alignRight="@+id/DK"
+                    android:layout_alignBottom="@+id/imageView20"
+                    android:layout_marginStart="-44dp"
+                    android:layout_marginLeft="-44dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="136dp"
+                    android:layout_marginRight="136dp"
+                    android:layout_marginBottom="152dp"
+                    app:srcCompat="@drawable/dk" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="270dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintHorizontal_bias="0.153"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/circle" />
+
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_alignTop="@+id/imageView19"
+                    android:layout_alignBottom="@+id/imageView19"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="141dp"
+                    android:layout_marginEnd="151dp"
+                    android:layout_marginRight="151dp"
+                    android:layout_marginBottom="68dp"
+                    android:text="SMS"
+                    android:textSize="36sp"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="29dp"
+                    tools:layout_editor_absoluteX="10dp"
+                    tools:layout_editor_absoluteY="524dp" />
+
+                <TextView
+                    android:id="@+id/SMS"
+                    android:layout_width="186dp"
+                    android:layout_height="58dp"
+                    android:layout_alignStart="@+id/imageView19"
+                    android:layout_alignLeft="@+id/imageView19"
+                    android:layout_alignTop="@+id/imageView19"
+                    android:layout_alignEnd="@+id/imageView19"
+                    android:layout_alignRight="@+id/imageView19"
+                    android:layout_alignBottom="@+id/imageView19"
+                    android:layout_marginStart="59dp"
+                    android:layout_marginLeft="59dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="59dp"
+                    android:layout_marginRight="59dp"
+                    android:layout_marginBottom="135dp"
+                    android:text="TextView"
+                    android:textSize="30sp"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="57dp"
+                    tools:layout_editor_absoluteX="10dp"
+                    tools:layout_editor_absoluteY="543dp" />
+
+                <ImageView
+                    android:id="@+id/imageView26"
+                    android:layout_width="104dp"
+                    android:layout_height="63dp"
+                    android:layout_alignStart="@+id/imageView19"
+                    android:layout_alignLeft="@+id/imageView19"
+                    android:layout_alignTop="@+id/imageView19"
+                    android:layout_alignEnd="@+id/SMS"
+                    android:layout_alignRight="@+id/SMS"
+                    android:layout_alignBottom="@+id/SMS"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="108dp"
+                    android:layout_marginRight="108dp"
+                    android:layout_marginBottom="56dp"
+                    app:srcCompat="@drawable/sms" />
+
+
+            </RelativeLayout>
 
 
         </LinearLayout>
     </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="749dp"
+        android:layout_height="246dp"
+        app:srcCompat="@drawable/images"
+        tools:layout_editor_absoluteX="-127dp"
+        tools:layout_editor_absoluteY="124dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="160dp"
+        android:layout_height="98dp"
+        android:focusableInTouchMode="true"
+        android:text="Hello"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="559dp"
+        android:layout_height="74dp"
+        android:text="We Do Communicate"
+        android:textColor="#FFFFFF"
+        android:textSize="40"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="252dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

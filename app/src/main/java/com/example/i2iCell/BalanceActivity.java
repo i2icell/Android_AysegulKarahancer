@@ -22,7 +22,7 @@ public class BalanceActivity extends AppCompatActivity {
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.activity_balance);
                 //http://68.183.75.84:8080/i2iCellService/services/Services/getBalancesResponse?inputPhoneNumber=5327981750
-                TextView gb = (TextView) findViewById(R.id.GB);
+                TextView gb = (TextView) findViewById(R.id.gigabyte);
                 TextView dk = (TextView) findViewById(R.id.DK);
                 TextView sms = (TextView) findViewById(R.id.SMS);
                 Bundle bundle =getIntent().getExtras();

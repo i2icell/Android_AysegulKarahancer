@@ -85,8 +85,8 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("MyTag",e.toString());
                 }
                if(response.charAt(63)=='1'){ Toast.makeText(getApplicationContext(),"Giriş Başarılı", Toast.LENGTH_SHORT).show();
-                String getPhone;
-               getPhone = (String.valueOf(phoneNumber.getText()));
+                  String getPhone;
+                  getPhone = (String.valueOf(phoneNumber.getText()));
                    Bundle bundle = new Bundle();
                    bundle.putString("datam", String.valueOf(phoneNumber.getText()));
                    toBalanceActivityIntent.putExtras(bundle);
