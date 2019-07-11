@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BalanceActivity">
@@ -33,6 +36,7 @@
         android:id="@+id/imageView10"
         android:layout_width="165dp"
         android:layout_height="144dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="@+id/textView14"
         app:layout_constraintHorizontal_bias="0.0"
@@ -62,8 +66,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
-        app:layout_constraintVertical_bias="0.529"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
@@ -78,8 +81,8 @@
 
                 <TextView
                     android:id="@+id/gigabyte"
-                    android:layout_width="110dp"
-                    android:layout_height="47dp"
+                    android:layout_width="144dp"
+                    android:layout_height="52dp"
                     android:layout_alignTop="@+id/imageView18"
                     android:layout_alignEnd="@+id/imageView18"
                     android:layout_alignRight="@+id/imageView18"
@@ -87,11 +90,11 @@
                     android:layout_marginStart="58dp"
                     android:layout_marginLeft="58dp"
                     android:layout_marginTop="76dp"
-                    android:layout_marginEnd="74dp"
-                    android:layout_marginRight="74dp"
-                    android:layout_marginBottom="150dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="126dp"
                     android:text="TextView"
-                    android:textSize="24sp"
+                    android:textSize="30sp"
                     tools:layout_conversion_absoluteHeight="32dp"
                     tools:layout_conversion_absoluteWidth="99dp" />
 
@@ -305,18 +308,31 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <ImageView
-        android:id="@+id/imageView30"
-        android:layout_width="555dp"
-        android:layout_height="270dp"
+    <EditText
+        android:id="@+id/backgr"
+        android:layout_width="758dp"
+        android:layout_height="296dp"
         android:layout_marginTop="10dp"
+        android:background="#1976D2"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.278"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/images" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="434dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="176dp"
+        android:text="We Do Communicate"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toEndOf="@+id/toolbar2"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
         android:id="@+id/textView12"
@@ -329,23 +345,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView17"
         app:layout_constraintEnd_toStartOf="@+id/imageView12"
-        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toEndOf="@+id/imageView10"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
         app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="434dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="156dp"
-        android:text="We Do Communicate"
-        android:textColor="#FFFFFF"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/imageView12"
-        app:layout_constraintHorizontal_bias="0.814"
-        app:layout_constraintStart_toEndOf="@+id/toolbar2"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
