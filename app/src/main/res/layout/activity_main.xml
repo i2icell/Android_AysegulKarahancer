@@ -12,7 +12,7 @@
         android:id="@+id/loginPassword"
         android:layout_width="300dp"
         android:layout_height="51dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="@+id/textView8"
@@ -157,7 +157,7 @@
         app:srcCompat="@drawable/plus" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imageButton"
         android:layout_width="37dp"
         android:layout_height="29dp"
         app:layout_constraintBottom_toBottomOf="@+id/loginPassword"

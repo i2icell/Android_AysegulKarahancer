@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         final EditText loginPassword = (EditText)findViewById(R.id.loginPassword);
         final Intent toSignUpIntent = new Intent(getBaseContext(),SignupActivity.class);
         final Intent toBalanceActivityIntent = new Intent(getBaseContext(),BalanceActivity.class);
+        final Intent toChangePassword = new Intent(getBaseContext(),ChangePasswordActivity.class);
+        final ImageView changePassButton = (ImageView) findViewById(R.id.imageButton);
         //final Intent toBalanceActivityIntent = new Intent(getBaseContext(),BalanceActivity.class);
         final AlertDialog.Builder loginFailed = new AlertDialog.Builder(this);
         loginFailed.setMessage("Kullanıcı Adı Veya Kullanıcı Şifresi Hatalı");
@@ -54,6 +57,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(toSignUpIntent);
+            }
+        });
+        changePassButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                startActivity(toChangePassword);
             }
         });
         enterButton.setOnClickListener(new View.OnClickListener() {
