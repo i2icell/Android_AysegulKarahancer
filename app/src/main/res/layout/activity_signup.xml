@@ -14,7 +14,7 @@
         android:id="@+id/toolbar3"
         android:layout_width="429dp"
         android:layout_height="69dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="48dp"
         android:background="#959999"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -45,6 +45,18 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/goBack2"
+        android:layout_width="43dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <ImageView
         android:id="@+id/imageView4"

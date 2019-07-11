@@ -1,6 +1,9 @@
 package com.example.i2iCell;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,8 +30,18 @@ public class BalanceActivity extends AppCompatActivity {
                 TextView sms = (TextView) findViewById(R.id.SMS);
                 Bundle bundle =getIntent().getExtras();
                 String data = bundle.getString("datam");
+
+                final Intent goBackToMain = new Intent(getBaseContext(),MainActivity.class);
+                final ImageView goBackMain = (ImageView)findViewById(R.id.goBack3);
                 final ArrayList<String> urls = new ArrayList<String>();
                 final TextView t;
+                goBackMain.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        finish();
+                        startActivity(goBackToMain);
+                    }
+                });
                 String response = "";
                 try {
                     String myURL = "http://68.183.75.84:8080/i2iCellService/services/Services/getBalancesResponse?inputPhoneNumber="

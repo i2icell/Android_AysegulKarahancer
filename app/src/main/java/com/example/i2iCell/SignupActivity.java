@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -32,6 +33,8 @@ String result;
         signupFailed.setPositiveButton("TAMAM", null);
         signupFailed.setCancelable(true);
         final Intent login = new Intent(getBaseContext(), MainActivity.class);
+        final Intent goBackToMain = new Intent(getBaseContext(),MainActivity.class);
+        final ImageView goBackMain = (ImageView)findViewById(R.id.goBack2);
         Button successSign = (Button) findViewById(R.id.successSign);
         final EditText tcNo = (EditText)findViewById(R.id.tcNo);
         final EditText firstName = (EditText)findViewById(R.id.firstName);
@@ -40,6 +43,13 @@ String result;
         final EditText phoneNum = (EditText)findViewById(R.id.phoneNum);
         final EditText signupPass = (EditText)findViewById(R.id.signupPassword);
         final EditText inputEmail = (EditText)findViewById(R.id.inputEmail);
+        goBackMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                startActivity(goBackToMain);
+            }
+        });
         successSign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -96,6 +106,9 @@ String result;
                     finish();
                     startActivity(getIntent());
                         return;
+
+
+
 
            //     else {
                 //  signupFailed.create().show();
