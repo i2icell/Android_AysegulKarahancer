@@ -55,7 +55,6 @@ public class BalanceActivity extends AppCompatActivity {
                         Log.i("", str);
                         response += str;
                     }
-
                     String[] xmls = response.split("<ns:return>");
                     String withoutReturnXML = xmls[1] + xmls[2] + xmls[3];
                     String[] lastXMLS = withoutReturnXML.split("</ns:return>");

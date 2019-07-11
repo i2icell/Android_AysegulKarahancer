@@ -32,9 +32,9 @@
 21        android:testOnly="true"
 22        android:theme="@style/AppTheme" >
 22-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:13:9-40
-23        <activity android:name="com.example.i2iCell.ChangePasswordActivity" />
-23-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:14:9-60
-23-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:14:19-57
+23        <activity android:name="com.example.i2iCell.passwordActivity" />
+23-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:14:9-63
+23-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:14:19-51
 24        <activity android:name="com.example.i2iCell.BalanceActivity" />
 24-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:15:9-53
 24-->C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:15:19-50

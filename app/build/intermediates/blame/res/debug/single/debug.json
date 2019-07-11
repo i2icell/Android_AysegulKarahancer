@@ -44,12 +44,12 @@
         "source": "C:\\Users\\7307\\.gradle\\caches\\transforms-2\\files-2.1\\5bf030364be1628a6f9f63ab6e371a98\\appcompat-1.0.2\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_title_material.xml.flat",
-        "source": "C:\\Users\\7307\\.gradle\\caches\\transforms-2\\files-2.1\\5bf030364be1628a6f9f63ab6e371a98\\appcompat-1.0.2\\res\\layout\\abc_alert_dialog_title_material.xml"
-    },
-    {
         "merged": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
         "source": "C:\\Users\\7307\\.gradle\\caches\\transforms-2\\files-2.1\\c9abde3d00d5c35e349279d839666d3e\\core-1.0.1\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_title_material.xml.flat",
+        "source": "C:\\Users\\7307\\.gradle\\caches\\transforms-2\\files-2.1\\5bf030364be1628a6f9f63ab6e371a98\\appcompat-1.0.2\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
         "merged": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_icon.xml.flat",
@@ -90,6 +90,10 @@
     {
         "merged": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_menu.png.flat",
         "source": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\src\\main\\res\\drawable\\menu.png"
+    },
+    {
+        "merged": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_password.xml.flat",
+        "source": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\src\\main\\res\\layout\\activity_password.xml"
     },
     {
         "merged": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
@@ -260,12 +264,12 @@
         "source": "C:\\Users\\7307\\.gradle\\caches\\transforms-2\\files-2.1\\5bf030364be1628a6f9f63ab6e371a98\\appcompat-1.0.2\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
-        "source": "C:\\Users\\7307\\.gradle\\caches\\transforms-2\\files-2.1\\c9abde3d00d5c35e349279d839666d3e\\core-1.0.1\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
         "merged": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_blue.png.flat",
         "source": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\src\\main\\res\\drawable\\blue.png"
+    },
+    {
+        "merged": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
+        "source": "C:\\Users\\7307\\.gradle\\caches\\transforms-2\\files-2.1\\c9abde3d00d5c35e349279d839666d3e\\core-1.0.1\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "C:\\Users\\7307\\AndroidStudioProjects\\Android_AysegulKarahancer\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",

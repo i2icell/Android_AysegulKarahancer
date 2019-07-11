@@ -87,10 +87,10 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\7307\.gradle\c
 		ADDED from C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:13:9-40
-activity#com.example.i2iCell.ChangePasswordActivity
-ADDED from C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:14:9-60
+activity#com.example.i2iCell.passwordActivity
+ADDED from C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:14:9-63
 	android:name
-		ADDED from C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:14:19-57
+		ADDED from C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:14:19-51
 activity#com.example.i2iCell.BalanceActivity
 ADDED from C:\Users\7307\AndroidStudioProjects\Android_AysegulKarahancer\app\src\main\AndroidManifest.xml:15:9-53
 	android:name

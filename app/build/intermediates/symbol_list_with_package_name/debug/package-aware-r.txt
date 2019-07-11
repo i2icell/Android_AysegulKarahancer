@@ -1364,6 +1364,7 @@ layout abc_tooltip
 layout activity_balance
 layout activity_change_password
 layout activity_main
+layout activity_password
 layout activity_signup
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

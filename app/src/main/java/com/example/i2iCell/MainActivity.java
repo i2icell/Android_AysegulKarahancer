@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         final EditText loginPassword = (EditText)findViewById(R.id.loginPassword);
         final Intent toSignUpIntent = new Intent(getBaseContext(),SignupActivity.class);
         final Intent toBalanceActivityIntent = new Intent(getBaseContext(),BalanceActivity.class);
-        final Intent toChangePassword = new Intent(getBaseContext(),ChangePasswordActivity.class);
+        final Intent toChangePassword = new Intent(getBaseContext(),passwordActivity.class);
         final ImageView changePassButton = (ImageView) findViewById(R.id.imageButton);
         //final Intent toBalanceActivityIntent = new Intent(getBaseContext(),BalanceActivity.class);
         final AlertDialog.Builder loginFailed = new AlertDialog.Builder(this);
