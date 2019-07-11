@@ -1,6 +1,4 @@
 package com.example.i2iCell;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -22,13 +20,8 @@ public class BalanceActivity extends AppCompatActivity {
             protected void onCreate(Bundle savedInstanceState) {
 
                 super.onCreate(savedInstanceState);
-
                 setContentView(R.layout.activity_balance);
-
-
-
                 //http://68.183.75.84:8080/i2iCellService/services/Services/getBalancesResponse?inputPhoneNumber=5327981750
-
                 TextView gb = (TextView) findViewById(R.id.GB);
                 TextView dk = (TextView) findViewById(R.id.DK);
                 TextView sms = (TextView) findViewById(R.id.SMS);
@@ -37,13 +30,9 @@ public class BalanceActivity extends AppCompatActivity {
                 final ArrayList<String> urls = new ArrayList<String>();
                 final TextView t;
                 String response = "";
-                Log.i("nedir",data);
-
                 try {
-
                     String myURL = "http://68.183.75.84:8080/i2iCellService/services/Services/getBalancesResponse?inputPhoneNumber="
                             + data;
-
                     URL url = new URL(myURL);
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.setConnectTimeout(60000);

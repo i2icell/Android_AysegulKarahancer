@@ -3,6 +3,7 @@ package com.example.i2iCell;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -67,21 +68,42 @@ String result;
                     result = "" + response.charAt(75);
                     String myRes = result;
                     Log.i("resultFromXMLTag", result);
+
                     in.close();
                 } catch (Exception e) {
                     Log.d("MyTag", e.toString());
                 }
 
-                if (response.charAt(75)=='1'){ Toast.makeText(getApplicationContext(), "Kayıt Başarılı", Toast.LENGTH_SHORT).show();
+                {    if (response.charAt(75) == '1') {
+                    Toast.makeText(getApplicationContext(), "Kayıt Başarılı", Toast.LENGTH_SHORT).show();
                     startActivity(login);
-                    return;}
-                else { Toast.makeText(getApplicationContext(), "Kayıt Hatalı "+response.charAt(75), Toast.LENGTH_SHORT).show();
-                    signupFailed.create().show();
-                    return;}
+                    Log.i("DOGRUtag", String.valueOf(response.charAt(75)));
+                    return;
+                    }
 
+
+                    else if (response.charAt(75) == '0'){
+
+                    Toast.makeText(getApplicationContext(), "Kayıt Hatalı " + response.charAt(75), Toast.LENGTH_SHORT).show();
+                        signupFailed.create().show();
+                        Log.i("YANLIStag1", String.valueOf(response.charAt(75)));
+                    finish();
+                    startActivity(getIntent());
+
+                        return;
+                    }
+                    else
+                    finish();
+                    startActivity(getIntent());
+                        return;
+
+           //     else {
+                //  signupFailed.create().show();
+             //      Log.i("YANLIStag2", String.valueOf(response.charAt(75)));
+               //     return;}
 
                 }
-
+            }
         });
     }
 }

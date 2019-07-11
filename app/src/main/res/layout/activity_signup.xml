@@ -136,6 +136,7 @@
         android:id="@+id/tcNo"
         android:layout_width="354dp"
         android:layout_height="50dp"
+        android:maxLength="11"
         android:ems="10"
         android:inputType="number"
         android:textIsSelectable="true"

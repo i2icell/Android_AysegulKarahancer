@@ -20,6 +20,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.i2iCell.ChangePasswordActivity" />
         <activity android:name="com.example.i2iCell.denemeActivity" />
         <activity android:name="com.example.i2iCell.BalanceActivity" />
         <activity android:name="com.example.i2iCell.SignupActivity" />
