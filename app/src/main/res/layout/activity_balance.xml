@@ -140,12 +140,6 @@
                     android:layout_marginBottom="179dp"
                     app:srcCompat="@drawable/gb" />
 
-                <ImageView
-                    android:id="@+id/imageView27"
-                    android:layout_width="1299dp"
-                    android:layout_height="525dp"
-                    app:srcCompat="@drawable/blue" />
-
 
             </RelativeLayout>
 
@@ -313,11 +307,16 @@
 
     <ImageView
         android:id="@+id/imageView30"
-        android:layout_width="749dp"
-        android:layout_height="246dp"
-        app:srcCompat="@drawable/images"
-        tools:layout_editor_absoluteX="-127dp"
-        tools:layout_editor_absoluteY="124dp" />
+        android:layout_width="555dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/images" />
 
     <TextView
         android:id="@+id/textView12"
@@ -328,18 +327,25 @@
         android:textColor="#FFFFFF"
         android:textSize="50sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="161dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintEnd_toStartOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="559dp"
-        android:layout_height="74dp"
+        android:layout_width="434dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="156dp"
         android:text="We Do Communicate"
         android:textColor="#FFFFFF"
-        android:textSize="40"
+        android:textSize="40sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="252dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toEndOf="@+id/toolbar2"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
