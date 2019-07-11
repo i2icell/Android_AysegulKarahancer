@@ -328,7 +328,7 @@
         android:textColor="#FFFFFF"
         android:textSize="50sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteX="167dp"
         tools:layout_editor_absoluteY="161dp" />
 
     <TextView

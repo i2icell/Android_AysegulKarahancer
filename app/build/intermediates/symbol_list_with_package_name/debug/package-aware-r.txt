@@ -999,12 +999,16 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable circle
+drawable circle2
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable dk
+drawable gb
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1031,6 +1035,7 @@ drawable plus
 drawable qu
 drawable rounded_button
 drawable rounded_button_white_small
+drawable sms
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable userhead
@@ -1038,7 +1043,6 @@ id ALT
 id CTRL
 id DK
 id FUNCTION
-id GB
 id META
 id SHIFT
 id SMS
@@ -1069,7 +1073,6 @@ id all
 id always
 id async
 id auto
-id background
 id barrier
 id beginning
 id birthDate
@@ -1117,12 +1120,13 @@ id firstName
 id fixed
 id forever
 id ghost_view
+id gigabyte
 id gone
-id group
 id group_divider
 id groups
 id home
 id homeAsUp
+id horizontalScrollView
 id icon
 id icon_group
 id ifRoom
@@ -1130,7 +1134,10 @@ id image
 id imageView
 id imageView10
 id imageView12
+id imageView18
+id imageView19
 id imageView2
+id imageView20
 id imageView3
 id imageView4
 id imageView5
@@ -1149,6 +1156,7 @@ id lastName
 id left
 id line1
 id line3
+id linearLayout
 id listMode
 id list_item
 id loginPassword
@@ -1202,9 +1210,6 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
-id seekBarBlue
-id seekBarGreen
-id seekBarRed
 id select_dialog_listview
 id selected
 id shortcut
@@ -1331,6 +1336,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_balance
+layout activity_change_password
 layout activity_deneme
 layout activity_main
 layout activity_signup
