@@ -57,3 +57,12 @@ Extra information for how to run apk on Android Devices: [https://www.cnet.com/h
 
 **Step 7 :**
 ![Open from local](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA7.JPG)
+
+
+
+
+
+*First page of the application should run like this:*
+
+
+![Open from local](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/1.JPG)
