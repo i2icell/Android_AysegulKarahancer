@@ -1,4 +1,4 @@
-## **i2iCell Android App**
+## **i2iCell Android App** ![alttext](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/logo.png)
 
 **Installation Guide For i2iCell Android Application on Windows Devices**
 
@@ -55,5 +55,5 @@ Extra information for how to run apk on Android Devices: [https://www.cnet.com/h
 **Step 6 :**
 ![Pull Changes](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA6.jpg)
 
-**Step 6 :**
+**Step 7 :**
 ![Open from local](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA7.JPG)
