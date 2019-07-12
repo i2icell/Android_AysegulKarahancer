@@ -2,12 +2,14 @@ package com.example.i2iCell;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +29,17 @@ public class passwordActivity extends AppCompatActivity {
         final EditText pass = (EditText) findViewById(R.id.newPassword);
         final Button changebutton = (Button) findViewById(R.id.changeButton);
 
+        final Intent login = new Intent(getBaseContext(), MainActivity.class);
+        final Intent goBackToMain = new Intent(getBaseContext(),MainActivity.class);
+        final ImageView goBackMain = (ImageView)findViewById(R.id.goBack4);
+        goBackMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                startActivity(goBackToMain);
+            }
+        });
+
         final TextView t = (TextView) findViewById(R.id.textView20);
         final String v_phone = String.valueOf(phone.getText());
         final String v_tc = String.valueOf(tc.getText());
@@ -39,10 +52,9 @@ public class passwordActivity extends AppCompatActivity {
                 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
                 StrictMode.setThreadPolicy(policy);
                 String response = "";
-                //t.setText("uyuuyuyuyuyuyuyu");
-                Log.d("girdi mi",response);
-                String lalala="";
-                try {
+                Log.d("response",response);
+
+            try {
                     String myURL ="http://68.183.75.84:8080/i2iCellService/services/Services/changePassword?" +
                             "inputPhoneNumber=" +
                             phone.getText() +
@@ -52,7 +64,7 @@ public class passwordActivity extends AppCompatActivity {
                             pass.getText() ;
 
                     URL url = new URL(myURL);
-                    lalala = myURL;
+
                     HttpURLConnection conn=(HttpURLConnection) url.openConnection();
                     conn.setConnectTimeout(60000);
                     Log.d("lolo1",response);
@@ -75,10 +87,12 @@ public class passwordActivity extends AppCompatActivity {
 
                 if(String.valueOf(response.charAt(72)).equals("1")){ Toast.makeText(getApplicationContext(),"Parolanız Başarıyla Değiştirildi", Toast.LENGTH_SHORT).show();
 
+                    setIntent(goBackToMain);
                     return;
                 }
                 else if(String.valueOf(response.charAt(72)).equals("0")){ Toast.makeText(getApplicationContext(), "Parolanız Değiştirilemedi", Toast.LENGTH_SHORT).show();
-                    t.setText(lalala);
+
+                   setIntent(getIntent());
 
                     return;
                 }
