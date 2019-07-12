@@ -9,7 +9,8 @@ Here is the link: [https://developer.android.com/studio](https://developer.andro
  - When all downloadings are completed, open Android Stuio and follow this steps one by one:
  
   **YOU CAN FOLLOW TWO DIFFERENT WAY AFTER THIS:**
- ***---1***
+
+***---1***
  1. File >>> New >>> New Project
  2. Select Empty Project
  3. In the opening section, choose a name for application. It is not very important which name you gave.
@@ -19,8 +20,8 @@ Here is the link: [https://developer.android.com/studio](https://developer.andro
  6. At the opening menu, paste GitHub repository URL
  7. Done.
  
- 
-	  ***---2***
+
+***---2***
   1. Extract downloaded GitHub repository zip
   2. File >>> New >>> Open Project
   3. Select the path of downloaded GitHub reposirory.
