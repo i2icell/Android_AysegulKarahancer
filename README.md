@@ -33,15 +33,27 @@ Download repository's zip. And then get the apk of the project.
 
 Extra information for how to run apk on Android Devices: [https://www.cnet.com/how-to/how-to-install-apps-outside-of-google-play/](https://www.cnet.com/how-to/how-to-install-apps-outside-of-google-play/)
 
+## DETAILED GUIDE 
 
-DETAILED GUIDE
 
-Step 1 : 
+
+**Step 1 :**
 ![Download from Android Studio Developer Website](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA1.JPG)
-Step2:
+
+**Step 2 :**
 ![Pull from GitHub](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA2.JPG)
-Step3:![Create New Project](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA3.jpg)
-Step4:![Choose Project Activity](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA4.JPG)
-Step5:![VCS Implementation](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA5.jpg)
-Step6:![Pull Changes](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA6.jpg)
-Step7:![Open from local](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA7.JPG)
+
+**Step 3 :**
+![Create New Project](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA3.jpg)
+
+**Step 4 :**
+![Choose Project Activity](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA4.JPG)
+
+**Step 5 :**
+![VCS Implementation](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA5.jpg)
+
+**Step 6 :**
+![Pull Changes](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA6.jpg)
+
+**Step 6 :**
+![Open from local](https://raw.githubusercontent.com/i2icell/Android_AysegulKarahancer/master/app/src/main/res/drawable/AAAA7.JPG)
